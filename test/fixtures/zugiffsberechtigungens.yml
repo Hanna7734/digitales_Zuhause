@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  krankenhaus: false
+  elternkasse: false
+  familienkasse: false
+  standesamt: false
+  bZST: false
+
+two:
+  krankenhaus: false
+  elternkasse: false
+  familienkasse: false
+  standesamt: false
+  bZST: false

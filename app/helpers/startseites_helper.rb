@@ -1,0 +1,2 @@
+module StartseitesHelper
+end

@@ -1,0 +1,72 @@
+<%= form_with(model: profil) do |form| %>
+  <% if profil.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(profil.errors.count, "error") %> prohibited this profil from being saved:</h2>
+
+      <ul>
+        <% profil.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :vorname, style: "display: block" %>
+    <%= form.text_field :vorname %>
+  </div>
+
+  <div>
+    <%= form.label :nachname, style: "display: block" %>
+    <%= form.text_field :nachname %>
+  </div>
+
+  <div>
+    <%= form.label :geburtsdatum, style: "display: block" %>
+    <%= form.text_field :geburtsdatum %>
+  </div>
+
+  <div>
+    <%= form.label :geschlecht, style: "display: block" %>
+    <%= form.text_field :geschlecht %>
+  </div>
+
+  <div>
+    <%= form.label :wohnort, style: "display: block" %>
+    <%= form.text_field :wohnort %>
+  </div>
+
+  <div>
+    <%= form.label :postleitzahl, style: "display: block" %>
+    <%= form.text_field :postleitzahl %>
+  </div>
+
+  <div>
+    <%= form.label :straße, style: "display: block" %>
+    <%= form.text_field :straße %>
+  </div>
+
+  <div>
+    <%= form.label :hausnummer, style: "display: block" %>
+    <%= form.text_field :hausnummer %>
+  </div>
+
+  <div>
+    <%= form.label :string, style: "display: block" %>
+    <%= form.text_field :string %>
+  </div>
+
+  <div>
+    <%= form.label :verknüpfteKonten, style: "display: block" %>
+    <%= form.text_field :verknüpfteKonten %>
+  </div>
+
+  <div>
+    <%= form.label :steuerID, style: "display: block" %>
+    <%= form.text_field :steuerID %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

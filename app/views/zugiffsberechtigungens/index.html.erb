@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Zugiffsberechtigungens</h1>
+
+<div id="zugiffsberechtigungens">
+  <% @zugiffsberechtigungens.each do |zugiffsberechtigungen| %>
+    <%= render zugiffsberechtigungen %>
+    <p>
+      <%= link_to "Show this zugiffsberechtigungen", zugiffsberechtigungen %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New zugiffsberechtigungen", new_zugiffsberechtigungen_path %>

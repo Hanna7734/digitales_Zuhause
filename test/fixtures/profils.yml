@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vorname: MyString
+  nachname: MyString
+  geburtsdatum: MyString
+  geschlecht: MyString
+  wohnort: MyString
+  postleitzahl: MyString
+  straße: MyString
+  hausnummer: MyString
+  string: MyString
+  verknüpfteKonten: MyString
+  steuerID: MyString
+
+two:
+  vorname: MyString
+  nachname: MyString
+  geburtsdatum: MyString
+  geschlecht: MyString
+  wohnort: MyString
+  postleitzahl: MyString
+  straße: MyString
+  hausnummer: MyString
+  string: MyString
+  verknüpfteKonten: MyString
+  steuerID: MyString

@@ -1,0 +1,2 @@
+module MitteilungensHelper
+end

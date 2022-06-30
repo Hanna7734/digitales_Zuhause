@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @startseite %>
+
+<div>
+  <%= link_to "Edit this startseite", edit_startseite_path(@startseite) %> |
+  <%= link_to "Back to startseites", startseites_path %>
+
+  <%= button_to "Destroy this startseite", @startseite, method: :delete %>
+</div>

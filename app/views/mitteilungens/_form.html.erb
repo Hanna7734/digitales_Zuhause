@@ -1,0 +1,27 @@
+<%= form_with(model: mitteilungen) do |form| %>
+  <% if mitteilungen.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(mitteilungen.errors.count, "error") %> prohibited this mitteilungen from being saved:</h2>
+
+      <ul>
+        <% mitteilungen.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :mitteilungen, style: "display: block" %>
+    <%= form.text_area :mitteilungen %>
+  </div>
+
+  <div>
+    <%= form.label :updatesVorgänge, style: "display: block" %>
+    <%= form.text_area :updatesVorgänge %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

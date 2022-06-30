@@ -1,0 +1,2 @@
+class Mitteilungen < ApplicationRecord
+end

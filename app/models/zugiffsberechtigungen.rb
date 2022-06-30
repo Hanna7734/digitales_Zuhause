@@ -1,0 +1,2 @@
+class Zugiffsberechtigungen < ApplicationRecord
+end

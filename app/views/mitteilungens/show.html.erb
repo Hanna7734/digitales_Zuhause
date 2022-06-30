@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @mitteilungen %>
+
+<div>
+  <%= link_to "Edit this mitteilungen", edit_mitteilungen_path(@mitteilungen) %> |
+  <%= link_to "Back to mitteilungens", mitteilungens_path %>
+
+  <%= button_to "Destroy this mitteilungen", @mitteilungen, method: :delete %>
+</div>

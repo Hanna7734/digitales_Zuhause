@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Startseites</h1>
+
+<div id="startseites">
+  <% @startseites.each do |startseite| %>
+    <%= render startseite %>
+    <p>
+      <%= link_to "Show this startseite", startseite %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New startseite", new_startseite_path %>
