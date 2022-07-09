@@ -1,36 +1,34 @@
 <nav class="navbar navbar-expand-lg bg-primary">
   
   <div class="container-fluid">
-  	<%= link_to 'Digitales Zuhause', root_path, class:"navbar-brand"  %>
+  	 <%= link_to 'Digitales Zuhause', root_path, class:"navbar-brand text-white"  %>
 
-
+   
 
     <ul class="nav navbar-nav navbar-right">
+
+ <% if user_signed_in? %>
+
+      <li class="nav-item">
+        <%= link_to "Passwort bearbeiten", edit_user_registration_path, class:"nav-link text-white" %>
+      </li>
+
+      <li class="nav-item">
+        <%= button_to "Abmelden", destroy_user_session_path, method: :delete, class:"btn btn-primary text-white" %>  
+      </li>
+      
+
+      <% else %>
+      <li class="nav-item">
+        <%= button_to "Anmelden", new_user_session_path, class:"btn btn-primary text-white" %>
+      </li>
+
+      <% end %>
+
+
             
-    
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-          <div class="container-fluid">
-    <%= link_to "Einstellungen", home_einstellungen_path, class:"nav-link" %>
-      <img src="/railsDigitalesZuhause/digitalesZuhause/app/assets/images/E.png"
-
-
-      /docs/5.2/assets/brand/bootstrap-logo.svg
-      
-       alt="" width="30" height="24" class="d-inline-block align-text-top">
-      
-    </div>
-
-
-        
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             
             Profil
           </a>
@@ -42,9 +40,34 @@
               <%= link_to "Kind", home_profilKind_path, class:"dropdown-item" %>
               </li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Abmelden</a></li>
+            <li>
+              <%= link_to "Abmelden", destroy_user_session_path, method: :delete, class:"dropdown-item"
+              %>
+              </li>
+              
+              
           </ul>
         </li>
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    
+    
+
+
+<a class="navbar-brand" href="http://localhost:3000/home/einstellungen">
+    <%= image_tag "settings.png", alt:"", width:"30", height:"24"%> 
+  </a>
+      
+      
+    </div>
+
+
+       
+        
         
             
     </div>

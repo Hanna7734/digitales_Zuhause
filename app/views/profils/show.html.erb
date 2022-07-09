@@ -1,11 +1,12 @@
-<p style="color: green"><%= notice %></p>
+
 
 <%= render @profil %>
 
 <div>
 
 
-  <%= link_to "Profil bearbeiten", edit_profil_path(@profil), class:"btn btn-primary" %> |
-  
-  <%= button_to "Profil löschen", @profil, method: :delete, class:"btn btn-primary btn-sm" %>
+  <%= link_to "Profil bearbeiten", edit_profil_path(@profil), class:"btn btn-primary" %> 
+
+<br><br>
+    <%= button_to "Profil löschen", @profil, method: :delete, class:"btn btn-outline-danger btn-sm" %>
 </div>

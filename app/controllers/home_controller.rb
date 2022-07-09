@@ -14,4 +14,16 @@ class HomeController < ApplicationController
   def einstellungen
   end
 
+  def impressum
+  end
+  
+  def erledigteAnt
+  end
+
+  def nAnt
+  end
+
+  def genehmigungspflichtigeAnt
+  end
+
 end

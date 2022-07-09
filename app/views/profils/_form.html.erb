@@ -12,61 +12,69 @@
   <% end %>
 
   <div>
-    <%= form.label :vorname, style: "display: block" %>
-    <%= form.text_field :vorname %>
+    <%= form.label :vorname, style: "display: block form-group" %>
+    <%= form.text_field :vorname, class:"form-control" %>
+
+
   </div>
 
   <div>
-    <%= form.label :nachname, style: "display: block" %>
-    <%= form.text_field :nachname %>
+    <%= form.label :nachname, style: "display: block form-group" %>
+    <%= form.text_field :nachname, class:"form-control" %>
   </div>
 
   <div>
-    <%= form.label :geburtsdatum, style: "display: block" %>
-    <%= form.text_field :geburtsdatum %>
+    <%= form.label :geburtsdatum, style: "display: block form-group" %>
+    <%= form.text_field :geburtsdatum, class:"form-control" %>
   </div>
 
   <div>
-    <%= form.label :geschlecht, style: "display: block" %>
-    <%= form.text_field :geschlecht %>
+    <%= form.label :geschlecht, style: "display: block form-group" %>
+
+    <%= form.text_field :geschlecht, class:"form-control" %>
+
+      
+    
   </div>
 
   <div>
-    <%= form.label :wohnort, style: "display: block" %>
-    <%= form.text_field :wohnort %>
+    <%= form.label :wohnort, style: "display: block form-group" %>
+    <%= form.text_field :wohnort, class:"form-control" %>
   </div>
 
   <div>
-    <%= form.label :postleitzahl, style: "display: block" %>
-    <%= form.text_field :postleitzahl %>
+    <%= form.label :postleitzahl, style: "display: block form-group" %>
+    <%= form.text_field :postleitzahl, class:"form-control"%>
   </div>
 
   <div>
-    <%= form.label :straße, style: "display: block" %>
-    <%= form.text_field :straße %>
+    <%= form.label :straße, style: "display: block form-group" %>
+    <%= form.text_field :straße, class:"form-control"%>
   </div>
 
   <div>
-    <%= form.label :hausnummer, style: "display: block" %>
-    <%= form.text_field :hausnummer %>
+    <%= form.label :hausnummer, style: "display: block form-group" %>
+    <%= form.text_field :hausnummer, class:"form-control" %>
   </div>
 
   <div>
-    <%= form.label :string, style: "display: block" %>
-    <%= form.text_field :string %>
+    <%= form.label :string, style: "display: block form-group" %>
+    <%= form.text_field :string, class:"form-control" %>
   </div>
 
   <div>
-    <%= form.label :verknüpfteKonten, style: "display: block" %>
-    <%= form.text_field :verknüpfteKonten %>
+    <%= form.label :verknüpfteKonten, style: "display: block form-group" %>
+    <%= form.text_field :verknüpfteKonten, class:"form-control" %>
   </div>
+  
 
   <div>
-    <%= form.label :steuerID, style: "display: block" %>
-    <%= form.text_field :steuerID %>
+    <%= form.label :steuerID, style: "display: block form-group" %>
+    <%= form.text_field :steuerID, class:"form-control" %>
   </div>
+</br>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit class:'btn btn-primary' %>
   </div>
 <% end %>

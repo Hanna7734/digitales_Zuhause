@@ -1,6 +1,53 @@
 <h1>Profil des Kindes</h1>
 
-DB Kind?
-</br></br></br></br></br>
 
-<button type="button" class="btn btn-outline-info"><%= link_to "Profildaten", profils_path, class:"dropdown-item" %></button>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Profildaten</h5>
+        <p class="card-text">Hier können Sie Ihre Profildaten einsehen</p>
+    <a href="http://localhost:3000/profils/2" class="btn btn-outline-info">Profildaten</a>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Erledigte Anträge</h5>
+        <p class="card-text">Hier können Sie Ihre bereits abgeschlossenen Anträge einsehen.</p>
+        <button type="button" class="btn btn-outline-info"><%= link_to "Erledigte Anträge", home_erledigteAnt_path, class:"dropdown-item" %></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</br>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Anzustoßende Anträge</h5>
+        <p class="card-text">Hier finden Sie alle Anträge, die Sie noch selbst stellen müssen.</p>
+        <button type="button" class="btn btn-outline-info"><%= link_to "Anzustoßende Anträge", home_anAnt_path, class:"dropdown-item" %></button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Genehmigungspflichtige Anträge</h5>
+        <p class="card-text">Hier finden Sie alle automatisierten Anträge, deren Bearbeitung Sie zustimmen müssen. </br></p>
+        <button type="button" class="btn btn-outline-info"><%= link_to "Genehmigungspflichtige Anträge", home_genehmigungspflichtigeAnt_path, class:"dropdown-item" %></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

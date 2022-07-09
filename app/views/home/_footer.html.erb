@@ -1,14 +1,17 @@
-<nav class="navbar fixed-bottom bg-light">
+<nav class="navbar sticky-sm-bottom">
   <div class="container-md">
     
 
    <a class="navbar-brand">
-    <%= link_to 'About Us', home_about_path, class:"nav-link active" %>
+    <%= link_to "About Us", home_about_path, class:"nav-link active" %>
   </a>
 
 
-<a class="navbar-brand" href="#">Impressum</a>
- <a class="navbar-brand" href="#">Link</a>
+<a class="navbar-brand">
+<%= link_to "Impressum", home_impressum_path, class:"nav-link active" %>
+
+
+ 
  
   </div>
 </nav>

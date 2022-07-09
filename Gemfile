@@ -44,6 +44,10 @@ gem "bootsnap", require: false
 
 gem 'tzinfo-data', '~> 1.2022', '>= 1.2022.1'
 
+
+
+gem 'devise', '~> 4.8', '>= 4.8.1'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
