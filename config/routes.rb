@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   get 'home/impressum'
   get 'home/erledigteAnt' 
   get 'home/anAnt'
+  get 'home/weitereDetails'
+  get 'home/antstellen'
   get 'home/genehmigungspflichtigeAnt'
   root 'home#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

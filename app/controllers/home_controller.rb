@@ -26,4 +26,10 @@ class HomeController < ApplicationController
   def genehmigungspflichtigeAnt
   end
 
+  def weitereDetails
+  end
+
+  def antstellen
+  end
+
 end
