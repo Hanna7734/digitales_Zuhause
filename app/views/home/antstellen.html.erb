@@ -1,4 +1,16 @@
-<h1>Elterngeld-Antrag</h1>
+<% if flash.any? %>
+<% flash.each do |type, msg| %>
+<div>
+  <%= msg %>
+</div>
+<% end %>
+<% end %>
+
+<%= render "notice", home: @home %>
+
+<h1>Antragstellung</h1>
+
+
 
 <h4>Daten des Kindes:</h4>
   <div class="mb-3 row">
@@ -68,5 +80,9 @@
     </div>
   </div>
 
-  <%= link_to "Antrag absenden", mitteilungens_path, class:"btn btn-primary"%>
+  <%= link_to "Antrag absenden", home_anAnt_path, class:"btn btn-primary" %>
+
+  
+
+
   <br><br>

@@ -32,4 +32,17 @@ class HomeController < ApplicationController
   def antstellen
   end
 
+
+  def msg
+  @anstellen = anstellen.new(anstellen_p)
+  if @anstellen.button
+
+  redirect_to 'home_anAnt_path'
+  flash[:notice] = "Nachricht"
+  else
+    redirect_to 'home_mitteilungens_path'
+  end
+end
+
+
 end
