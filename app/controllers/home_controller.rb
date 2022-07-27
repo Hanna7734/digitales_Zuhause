@@ -33,16 +33,20 @@ class HomeController < ApplicationController
   end
 
 
-  def msg
-  @anstellen = anstellen.new(anstellen_p)
-  if @anstellen.button
+  def button?
+    params[:commit] == "Antrag absenden"
+  
+  end
 
-  redirect_to 'home_anAnt_path'
-  flash[:notice] = "Nachricht"
+  def a
+    if button?
+      redirect_to 'home_anAnt_path', info: "Antrag erfolgreich versendet"
+  
   else
-    redirect_to 'home_mitteilungens_path'
+   redirect_to 'home_anAnt_path', danger: "Antrag wurde nicht versendet"
   end
 end
+
 
 
 end

@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   resources :zugiffsberechtigungens
   resources :profils
   #get 'home/index'
+
+  get '/button', to: 'home_controller#button', as: 'button'
+
   get 'home/about'
   get 'home/ProfilMutter'
   get 'home/profilKind'

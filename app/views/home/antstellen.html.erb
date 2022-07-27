@@ -1,13 +1,3 @@
-<% if flash.any? %>
-<% flash.each do |type, msg| %>
-<div>
-  <%= msg %>
-</div>
-<% end %>
-<% end %>
-
-<%= render "notice", home: @home %>
-
 <h1>Antragstellung</h1>
 
 
@@ -80,7 +70,10 @@
     </div>
   </div>
 
-  <%= link_to "Antrag absenden", home_anAnt_path, class:"btn btn-primary" %>
+    <button type="button" class="btn btn-primary">
+      <%= link_to "Antrag absenden", home_anAnt_path, class: "text-white" %>
+    </button>
+
 
   
 
